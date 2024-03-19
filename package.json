@@ -1,0 +1,13 @@
+{'license_plate_thumbnail': 'https://faceids.tadi.uz/uploads/2024/03/07/car_event/062115_car_license_plate_thumbnail_nvILRF.jpg', 'episode': None, 'matched_o
+bject': '', 'matched_card': 5, 'matched_cluster': None, 'line': None, 'line_crossing_direction': '', 'created_date': '2024-03-07T06:21:15+00:00', 'camera': 21
+, 'camera_group': 3, 'case': None, 'thumbnail': 'https://faceids.tadi.uz/uploads/2024/03/07/car_event/062115_car_thumbnail_kaKydj.jpg', 'fullframe': 'https://
+faceids.tadi.uz/uploads/2024/03/07/car_event/062115_car_full_frame_OhauRC.jpg', 'bs_type': 'overall', 'frame_coords_left': 937, 'frame_coords_top': 13, 'frame
+_coords_right': 1589, 'frame_coords_bottom': 389, 'matched': True, 'matched_lists': [5], 'confidence': 1.0, 'cluster_confidence': 0.0, 'quality': 0.766601, 'd
+etector_params': {'quality': 0.76660156, 'track': {'id': None}}, 'acknowledged_date': '2024-03-07T06:21:15+00:00', 'acknowledged_by': 0, 'acknowledged_reactio
+n': '', 'acknowledged': True, 'video_archive': None, 'external_detector': False, 'meta': {}, 'id': '4589689228657945489', 'features': {'color': {'name': 'whit
+e', 'confidence': 0.968608}, 'body': {'name': 'sedan', 'confidence': 0.904522}, 'make': {'name': 'nissan', 'confidence': 0.623815}, 'model': {'name': 'nissan/
+cefiro', 'confidence': 0.594969}, 'license_plate_number': {'name': '01S190ZA', 'confidence': 0.944823, 'bbox': {'bottom': 289, 'top': 246, 'right': 1521, 'lef
+t': 1429}}, 'license_plate_country': {'name': 'UZ', 'confidence': 1.0}, 'license_plate_region': {'name': 'unknown', 'confidence': 1.0}, 'license_plate_number_
+color': {'name': 'unknown', 'confidence': 1.0}, 'special_vehicle_type': {'name': '', 'confidence': 0.0}, 'category': {'name': 'B', 'confidence': 0.969874}, 'w
+eight_type': {'name': '', 'confidence': 0.0}, 'orientation': {'name': 'back', 'confidence': 0.90963}}, 'looks_like_confidence': None, 'object_type': 'car', 'w
+ebhook_type': 'car_events', 'event_model_class': 'event_created'}]
