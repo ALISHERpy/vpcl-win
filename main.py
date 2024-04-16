@@ -3,7 +3,8 @@ from fastapi import FastAPI, Request
 import subprocess
 
 app = FastAPI()
-gate_status = 0
+back_side = ["back", 'Rear']
+front_side = ["front"]
 
 
 async def open():
@@ -27,19 +28,19 @@ async def stop():
 
 @app.post("/webhook")
 async def webhook(request: Request):
-    global gate_status
+    data = await request.json()
+    orientation_info = data[0]['features']['orientation']
+    # print(orientation_info['name'])
 
-    # data = await request.json()
-    # if data[0]["camera"] == 19:
-    if gate_status == 0:
+    if orientation_info['name'] in front_side:
         await open()
-        gate_status += 1
+        return {"message": "It has been Opened"}
 
-    elif gate_status == 1:
+    elif orientation_info['name'] in back_side:
         await close()
-        gate_status -= 1
-
-    return {"message": "Okey"}
+        return {"message": "It has been closed"}
+    else:
+        return {"message": "Error no thing is clear"}
 
 
 @app.post("/open")
