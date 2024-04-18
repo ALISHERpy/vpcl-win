@@ -6,7 +6,6 @@ app = FastAPI()
 back_side = ["back", 'Rear']
 front_side = ["front"]
 
-
 async def open():
     cmd_file_path = 'port1_on.cmd'
     subprocess.call(cmd_file_path, shell=True)
@@ -59,3 +58,12 @@ async def close_button():
 async def close_button():
     await stop()
     return 'it has been stop'
+
+
+@app.get("/")
+async def read_root():
+    return {"message": "Hello, world!"}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="192.168.100.103", port=8000)
